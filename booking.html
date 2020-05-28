@@ -362,11 +362,34 @@ V. ЗАКЛЮЧНІ ПОЛОЖЕННЯ
     <input type="number" class="form-control" id="phone" placeholder="0_ _  _ _ _ _ _ _ _">
     <br>
     <hr noshade size="2"></Hr>
-    <button type="button" id="hider2" class="btn btn-warning btn-lg btn-block" >Далі</button>
-
+    <button type="button" id="hider4" class="btn btn-warning btn-lg btn-block" >Далі</button>
+    <script>
+      document.getElementById('hider4').onclick = function() {
+      document.getElementById('receipt').style="display: block;";
+      document.getElementById('fio').style="display: none;"
+    }
+    </script>
   </div><!fio>
-   <div>
-   </div>
+  <!---------------------------------------------------------------------------->
+
+   <div id="receipt" style="display: none;"><!receipt>
+     Звіт:<br>
+     <hr noshade size="2"></Hr><br>
+     Ви вибрали:<br>
+     Дорослих -<br>
+     Дітей    -<br>
+     По ціні  -<br>
+     -----------------------------<br>
+     Всього:  -<br>
+     -----------------------------<br>
+     Телефон  -<br>
+     Емейл    -<br>
+     <hr noshade size="2"></Hr><br>
+     *Предоплата мінімальна сума - за добу.
+     <button type="button" id="hider2" class="btn btn-warning btn-lg btn-block" >Оплатити передоплату</button><br>
+     <hr noshade size="2"></Hr><br>
+     <button type="button" id="hider2" class="btn btn-warning btn-lg btn-block" >Оплатити повну суму</button><br>
+   </div><!receipt>
 
 
 
