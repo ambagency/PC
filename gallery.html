@@ -38,7 +38,7 @@
 <!------------------------------------------------------------------------------->
 <header>
 <nav class="navbar navbar-expand-md  fixed-top">
-    <a class="navbar-brand" ><font color="#CAB59A">HOTEL & RESTAURANT PREMIUM CLUB</font></a>
+    <a class="navbar-brand" ><font color="#CAB59A">HOTEL & RESTAURANT <br>PREMIUM CLUB</font></a>
 
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,23 +137,47 @@
 
 
 
-      <!-- FOOTER -->
-      <footer class="-dark bg-dark  ">
-        <p class="float-right"><a href="#">Back to top</a></p>
-<br>
-          <div>
+    <!-- FOOTER -->
+    <style>
+    #footer {
+      background:#433523;
+      height: 60px;
+    }
+    </style>
 
-          <form class="form-inline my-2 my-lg-0">
-            <label ><h1>Забронюйте номер прямо зараз</h1></label>
-
-            <p>  <button class="btn btn-outline-success my-2 my-sm-0"type="submit">Бронювання</button></p>
-          </form>
-          </div>
-
-<br><br>
-
-           <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      <footer  >
+        <div class="container-fluid" id="footer">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
       </footer>
+
+    <!------------------------------------------------------------------------->
+    <style>
+    #arrowTop {
+      height: 40px;
+      width: 40px;
+
+      position: fixed;
+      bottom:70px;
+      right:50px;
+      background: url('icon_top.png') no-repeat;
+      cursor: pointer;
+    }
+    </style>
+<!------------------------------------------------------------------------------>
+<div id="arrowTop" hidden></div>
+<!------------------------------------------------------------------------------>
+<script>
+
+arrowTop.onclick = function() {
+  window.scrollTo(pageXOffset, 0);
+  // после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+};
+
+window.addEventListener('scroll', function() {
+  arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
+</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

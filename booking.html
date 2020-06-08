@@ -16,7 +16,7 @@
 <body >
   <header>
   <nav class="navbar navbar-expand-md  fixed-top">
-      <a class="navbar-brand" ><font color="#CAB59A">HOTEL & RESTAURANT PREMIUM CLUB</font></a>
+      <a class="navbar-brand" ><font color="#CAB59A">HOTEL & RESTAURANT<br> PREMIUM CLUB</font></a>
 
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto navbar-right" >
               <li class="nav-item active">
-                  <a class="nav-link" href="#">Головна <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="rooms.html">Номери</a>
@@ -69,6 +69,7 @@ id="booking" action="booking.php" method="post">
    <center><p><b>ПОЛОЖЕННЯ ПРО КОНФІДЕНЦІЙНІСТЬ
 		ГОТЕЛЮ PREMIUM CLUB
 </b></p></center>
+<!------------
 <div><button type="button" class="btn btn-warning btn-lg btn-block" href="text1"onclick="view('text1'); return false" >ДЕТАЛЬНІШЕ</button></div>
 <script>
   function view(n)
@@ -79,9 +80,12 @@ style.display = (style.display == 'block') ? 'none' : 'block';
 </script>
 <hr noshade size="2"></Hr>
 </div>
-      <div id="text1" style="display: none;"margin left="100px" margin right = "10px">
+      <div id="text1" style="display: block;"margin left="100px" margin right = "10px">
+      ------->
         <style>
+
       p { text-indent: 25px; }
+      br {text-indent: 15px;}
     </style>
 <p>Положення про конфіденційність (надалі Положення) розроблене та опубліковане Готелем Premium Club, що діє як суб’єкт господарювання Товариство з обмеженою відповідальністю «ПРЕМІУМ КЛАБ» (далі також Готель), з метою ознайомлення замовників/споживачів/ клієнтів/гостей/відвідувачів та/або інших осіб, які відвідують та здійснюють перегляд інформації про Готель в мережі Інтернет, бронювання та ін. дії, зокрема на сайті Готелю https://premium-cl.com/ua, користуються готельними послугами чи іншими послугами на території Готелю, відвідують Готель чи з будь-якою іншою метою надають свої дані Готелю, про порядок отримання, обробки, зберігання, використання, розповсюдження даних отриманих Готелем чи наданих йому.</p>
 
@@ -428,6 +432,47 @@ style.display = (style.display == 'block') ? 'none' : 'block';
 </div><!display>
 </form>
 
+<!-- FOOTER -->
+<style>
+#footer {
+  background:#433523;
+  height: 60px;
+}
+</style>
+
+  <footer  >
+    <div class="container-fluid" id="footer">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+<!------------------------------------------------------------------------->
+<style>
+#arrowTop {
+  height: 40px;
+  width: 40px;
+
+  position: fixed;
+  bottom:70px;
+  right:50px;
+  background: url('icon_top.png') no-repeat;
+  cursor: pointer;
+}
+</style>
+<!------------------------------------------------------------------------------>
+<div id="arrowTop" hidden></div>
+<!------------------------------------------------------------------------------>
+<script>
+
+arrowTop.onclick = function() {
+window.scrollTo(pageXOffset, 0);
+// после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+};
+
+window.addEventListener('scroll', function() {
+arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
+</script>
 
 
 
