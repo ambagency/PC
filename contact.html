@@ -58,22 +58,148 @@
     </div>
 </nav>
 </header>
-<br><br><br><br><br><br>
+<br><br><br>
 
-<div><center>
-<h1> <p>Контакти </h1>
-</div>
 
-<div><center>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.861315347967!2d24.54793433787678!3d48.45282091219376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDI3JzEwLjgiTiAyNMKwMzInNTIuOCJF!5e0!3m2!1sru!2sua!4v1589554986313!5m2!1sru!2sua" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</center></div>
+<!--карта-->
+<div id="map">
+        <div style="overflow:hidden;width: 100%;position: relative;">
+          <iframe style="width: 100% !important;" height="300"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.183951518661!2d24.54581131566006!3d48.45299997924987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDI3JzEwLjgiTiAyNMKwMzInNTIuOCJF!5e0!3m2!1sru!2sua!4v1591710775472!5m2!1sru!2sua"
+          width="600" height="450" frameborder="0" scrolling="no"style="border:0;" marginheight="0" marginwidth="0"allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
- <div> <center>
-   <p><h4> 78500, м.Яремче, вул Ковпака 29 Б, Івано-Франківська обл</h4>
-   <p> <h4>+38067 3433400<h4>
-  <p><br> <h4> premiumclub2016@gmail.com</h4>
-  </center></div>
+            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+                <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by
+                    <a href="https://embedgooglemaps.com/en/">https://embedgooglemaps.com/en/</a> &amp;
+                    <a href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div>
+            <style>
+                #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }
+            </style>
+        </div>
+    </div>
+<!--карта-->
+<!--Контакти-->
+ <div class="container">
+   <div class="row">
 
+</style>
+     <section id="contact-form" >
+
+      <div class="col-md-7" id="div1">
+        <h2 class="lined-heading"><span>Зворотній зв'язок</span></h2>
+        <p>Ми завжди будемо раді вас бачити в HOTEL & RESTAURANT PREMIUM CLUB.
+          Ми будемо намагатися щоб ваш відпочинок був
+           незабутній, і Ви запам’ятали його надовго!</p>
+           <!---форма для відправлення-->
+           <form class="clearfix mt50" role="form" method="post" action="https://fb-resort.com/contacts" name="contactform" id="contactform">
+                        <input type="hidden" name="_token" value="w5XNDAT9FfaAYkTIsxYvcvG8EqjhEhkcPtjsHTzs">                        <!-- Error message -->
+
+                        <!--div class="alert alert-danger hidden"></div>-->
+                        <div id="message"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" accesskey="U"><span class="required"></span>Ваше Ім'я</label>
+                                    <input name="name" type="text" id="name" class="form-control" value="" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" accesskey="E"><span class="required"></span> E-mail</label>
+                                    <input name="email" type="email" id="email" value="" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" accesskey="F"><span class="required"></span>Номер телефону</label>
+                            <input name="phone" type="text" id="phone" class="form-control" value="" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="theme" accesskey="F"><span class="required"></span>Тема</label>
+                            <input name="theme" type="text" id="theme" class="form-control" value="" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="comments" accesskey="C"><span class="required"></span>Ваше повідомлення</label>
+                            <textarea name="comments" rows="9" id="comments" class="form-control" required=""></textarea>
+                        </div>
+
+                            <button type="submit" onclick="gtag('event', 'Надіслати', {'event_category': 'Зворотній звязок'});" id="contactSubmitBtn" class="btn btn-lg btn-primary" style="margin-top: 10px">Надіслати</button>
+
+                    </form>
+                    </div>
+                  </section>
+                  <!------------------------------------------------------------>
+                  <section class="contact-details">
+                <div class="col-md-4"id="div2">
+                    <h2 class="lined-heading"><span>Адреса</span></h2>
+                    <a href="https://fb-resort.com/img/contact/contact-01.jpg" data-rel="prettyPhoto" rel="prettyPhoto">
+                        <img src="https://fb-resort.com/img/contact/contact-01.jpg" alt="Our pool" class="img-thumbnail img-responsive">
+                    </a>
+                    <address class="mt50">
+                        <strong>F&amp;B SPA RESORT</strong><br>
+                        Урочище Вишня, 13<br><br>
+                        <span>Відділ бронювання:</span><br>
+                        <a href="tel:+380502516670">+38 (050) 251 66 70 (Viber)</a><br>
+                        <a href="tel:+380500292605">+38 (050) 029 26 05 (Viber)</a><br>
+                        <a href="tel:+380505381880">+38 (050) 538 18 80</a>
+
+                        <br><br>
+                        <span>Рецепція:</span><br>
+                        <a href="tel:+380992517757">+38 (099) 251 77 57 (Viber)</a><br>
+                        <br>
+                        <span>SPA:</span><br>
+                        <a href="tel:+380687444888">+38 (068) 744-48-88</a>
+                        <br><br>
+                        <span>Для корпоративних груп:</span><br>
+                        <a href="tel:+380505381880">+38 (050) 538 18 80</a>
+                        <br><br>
+                        <span>Event-service:</span><br>
+                        <a href="tel:+380507444888">+38 (050) 7444 888</a>
+                        <br><br>
+                        <a href="mailto:info@fb-resort.com" rel="nofollow">info@fb-resort.com</a><br>
+                        <a href="mailto:admin@fb-resort.com">admin@fb-resort.com</a>
+                        <span>– по питанням співпраці</span><br>
+
+                        <a href="mailto:event@fb-resort.com">event@fb-resort.com</a>
+                        <span>– для запитів на проведення банкетів</span>
+
+
+                        <br>
+                    </address>
+                    <h2 class="lined-heading mt50"><span>Соціальні мережі</span></h2>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="box-icon">
+                                <a href="https://www.facebook.com/Fomich.hotel/" target="_blank" rel="nofollow">
+                                    <div class="circle"><i class="fa fa-facebook fa-lg"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="box-icon">
+                                <a href="https://www.instagram.com/hotel_fomich/" target="_blank" rel="nofollow">
+                                    <div class="circle"><i class="fa fa-instagram fa-lg"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="box-icon">
+                                <a href="https://www.youtube.com/channel/UCi4iPKkJr0M9UWkm3p5BH9A" target="_blank" rel="nofollow">
+                                    <div class="circle"><i class="fa fa-youtube fa-lg"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <!---форма для відправлення-кінець-->
+
+   </div>
+
+ </div>
+<!--Контакти-->
     <!-- FOOTER -->
     <style>
     #footer {
